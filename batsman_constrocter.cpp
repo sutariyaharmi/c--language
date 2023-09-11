@@ -9,7 +9,8 @@ class batsman{
         batavg=runs/(innings-notout);
     }
     public:
-      void readdata(){
+        batsman()
+        {
           cout<<"enter bcode:";
           cin>>bcode;
           cout<<"enter bname:";
@@ -21,7 +22,7 @@ class batsman{
           cout<<"enter runs:";
           cin>>runs;
           batavg=runs/(innings-notout);
-      }
+        }      
 
        void displaydata()
        {
@@ -37,6 +38,6 @@ class batsman{
 int main()
 {
     batsman p;
-    p.readdata();
+    
     p.displaydata();
 }
